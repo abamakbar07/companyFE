@@ -9,6 +9,7 @@ function App() {
       <Auth />
       <Login />
       <Signup />
+      
     </div>
   );
 }
