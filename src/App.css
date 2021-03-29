@@ -1,3 +1,7 @@
+:root {
+  --main-color: #61dafb;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Sidebar {
+  background: #282c34;
+  height: 100vh;
+}
+
+.MainContent {
+  text-align: left;
+}
+
+.MainContent ul {
+  list-style: none;
+}
+
+.MainContent ul:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: black;
+}
+
+.MainContentActive {
+  background-color: white;
+  color: black
+}
+
+.MainFooter {
+  bottom: 0;
+  position: absolute;
+}
+
+.MainFooter:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: black;
 }
