@@ -1,7 +1,7 @@
 import './App.css';
-import Auth from './pages/auth/Auth';
-import Login from './pages/login/Login'
-import Signup from './pages/signup/Signup';
+import Auth from './pages/landingpage/auth/Auth';
+import Login from './pages/landingpage/login/Login'
+import Signup from './pages/landingpage/signup/Signup';
 
 function App() {
   return (
