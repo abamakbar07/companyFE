@@ -1,7 +1,7 @@
 import './App.css';
-import Auth from './components/auth/Auth';
-import Login from './components/login/Login.js'
-import Signup from './components/signup/Signup';
+import Auth from './pages/auth/Auth';
+import Login from './pages/login/Login'
+import Signup from './pages/signup/Signup';
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       <Auth />
       <Login />
       <Signup />
-      
     </div>
   );
 }
