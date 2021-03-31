@@ -6,11 +6,9 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -46,67 +44,67 @@ export default function Auth() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+    <div className="text-center">
       <CssBaseline />
       <Box className={classes.paper}>
         {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
+        <LockOutlinedIcon />
+      </Avatar> */}
         <Typography component="h1" variant="h5">
           Percobaan OTP
         </Typography>
         <form className={classes.form} noValidate>
           <div className={classes.formInput}>
             <TextField
-               className={classes.input}
-               variant="outlined"
-               margin="normal"
-               required
-               id="otp1"
-               name="otp1"
-               autoFocus
-               inputProps={{
-                  maxlength: 1,
-               }}
-               />
+              className={classes.input}
+              variant="outlined"
+              margin="normal"
+              required
+              id="otp1"
+              name="otp1"
+              autoFocus
+              inputProps={{
+                maxLength: 1,
+              }}
+            />
             <TextField
-               className={classes.input}
-               variant="outlined"
-               margin="normal"
-               required
-               id="otp2"
-               name="otp2"
-               inputProps={{
-                  maxlength: 1,
-               }}
-               />
+              className={classes.input}
+              variant="outlined"
+              margin="normal"
+              required
+              id="otp2"
+              name="otp2"
+              inputProps={{
+                maxLength: 1,
+              }}
+            />
             <TextField
-               className={classes.input}
-               variant="outlined"
-               margin="normal"
-               required
-               id="otp3"
-               name="otp3"
-               inputProps={{
-                  maxlength: 1,
-               }}
-               />
+              className={classes.input}
+              variant="outlined"
+              margin="normal"
+              required
+              id="otp3"
+              name="otp3"
+              inputProps={{
+                maxLength: 1,
+              }}
+            />
             <TextField
-               className={classes.input}
-               variant="outlined"
-               margin="normal"
-               required
-               id="otp4"
-               name="otp4"
-               inputProps={{
-                  maxlength: 1,
-               }}
-               />
+              className={classes.input}
+              variant="outlined"
+              margin="normal"
+              required
+              id="otp4"
+              name="otp4"
+              inputProps={{
+                maxLength: 1,
+              }}
+            />
           </div>
           {/* <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          /> */}
+          control={<Checkbox value="remember" color="primary" />}
+          label="Remember me"
+        /> */}
           <Button
             type="submit"
             variant="contained"
@@ -116,9 +114,9 @@ export default function Auth() {
             Verifikasi
           </Button>
           <Box className={classes.rowLine} border={1} width="100%" />
-          <Grid container style={{marginTop: 15,}}>
+          <Grid container style={{ marginTop: 15 }}>
             <Grid item xs>
-              <a variant="body2" style={{fontWeight: 600}}>
+              <a variant="body2" style={{ fontWeight: 600 }}>
                 Kirim ulang kode OTP
               </a>
             </Grid>
@@ -126,8 +124,8 @@ export default function Auth() {
         </form>
       </Box>
       {/* <Box mt={8}>
-        <Copyright />
-      </Box> */}
-    </Container>
+      <Copyright />
+    </Box> */}
+    </div>
   );
 }

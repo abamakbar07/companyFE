@@ -5,11 +5,9 @@ import TextField from "@material-ui/core/TextField";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -40,7 +38,7 @@ export default function Login() {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
+    <div className="text-center">
       <CssBaseline />
       <Box className={classes.paper}>
         {/* <Avatar className={classes.avatar}>
@@ -104,6 +102,6 @@ export default function Login() {
       {/* <Box mt={8}>
         <Copyright />
       </Box> */}
-    </Container>
+    </div>
   );
 }

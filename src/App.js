@@ -1,20 +1,24 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Dashboard from './pages/home/dashboard/Dashboard';
-import Auth from './pages/landingpage/auth/Auth';
-import Login from './pages/landingpage/login/Login'
-import Signup from './pages/landingpage/signup/Signup';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import { ModalContextProvider } from './components/context/ModalContext';
+import { PrivateRoute } from './components/routes/PrivateRoute';
+
+import LandingPage from './pages/landingpage/LandingPage';
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-
-      {/* <Auth />
-      <Login />
-      <Signup /> */}
-
-    </div>
+    <ModalContextProvider>
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route path="/" exact component={LandingPage} />
+            {/* <PrivateRoute /> */}
+          </Switch>
+        </div>
+      </Router>
+    </ModalContextProvider>
   );
 }
 
